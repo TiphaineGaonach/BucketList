@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bucket List{% endblock %}
+
+{% block body %}
+
+    <div class="example-wrapper">
+        <h1>Détail</h1>
+
+        {% if not wish %}
+        <p>Ce souhaite n'existe pas</p>
+        {% else %}
+        <p>Mon souhait est {{ wish }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

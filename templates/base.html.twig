@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Bucket List{% endblock %}</title>
+        <link rel = "stylesheet" href={{asset('../public/assets/css/style.css')}}>
+        <link rel="icon" type="image/png" href={{ asset('../public/assets/image/favicon.png') }}>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+                {% include('common/navigation/navigation.html.twig') %}
+
+        </header>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+
+    <footer>
+        <br>
+        {% block footer %}©BucketList - {{ "now"|date("Y") }}{% endblock %}
+    </footer>
+</html>

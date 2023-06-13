@@ -1,0 +1,26 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+}
+footer{
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.top-let-header{
+    display: flex;
+    align-items: center;
+}
+.application-title{
+    margin-left: 20px;
+}

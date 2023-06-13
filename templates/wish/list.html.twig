@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bucket List{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Wish List</h1>
+    <ul>
+        {% for key,wish in  wishes %}
+            <p><a href="{{ path('wish_detail',{'id':key}) }}">{{ wish }}</a></p>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
